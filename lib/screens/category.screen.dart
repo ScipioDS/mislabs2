@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mislabs2/services/the-meal-db-api.service.dart';
 
 import '../models/category.dart';
+import '../models/recipe.dart';
 import '../widgets/category.grid.dart';
 
 class CategoryScreen extends StatefulWidget {
@@ -135,25 +136,16 @@ class _CategoryScreenState extends State<CategoryScreen> {
               ),
             ),
           ),
-
-          // 🔽 NEW BUTTON AT BOTTOM 🔽
-          // SizedBox(
-          //   width: double.infinity,
-          //   child: Padding(
-          //     padding: const EdgeInsets.all(12),
-          //     child: ElevatedButton(
-          //       onPressed: () async {
-          //         Recipe recipe = await _theMealDBService.getRandomRecipe();
-          //         Navigator.pushNamed(context, '/recipe', arguments: recipe);
-          //       },
-          //       child: const Text(
-          //         "Get a random recipe",
-          //         style: TextStyle(fontSize: 18),
-          //       ),
-          //     ),
-          //   ),
-          // ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.pushNamed(context, '/recipe', arguments: "");
+        },
+        icon: const Icon(Icons.shuffle),
+        label: const Text("Random Recipe"),
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
       ),
     );
   }

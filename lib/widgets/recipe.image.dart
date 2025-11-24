@@ -8,11 +8,10 @@ class DetailImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
-      width: 250,
+      height: 300,
+      width: double.infinity, // Full width
       decoration: BoxDecoration(
         color: Colors.white,
-        shape: BoxShape.rectangle,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.1),
@@ -21,12 +20,9 @@ class DetailImage extends StatelessWidget {
           ),
         ],
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Image.network(
-          image,
-          fit: BoxFit.contain,
-        ),
+      child: Image.network(
+        image,
+        fit: BoxFit.cover, // Changed to cover for full width
       ),
     );
   }

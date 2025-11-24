@@ -11,11 +11,10 @@ class DetailTitle extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
       decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(30),
+        color: Colors.greenAccent,
         boxShadow: [
           BoxShadow(
-            color: Colors.red.withValues(alpha: 0.3),
+            color: Colors.green.withValues(alpha: 0.3),
             blurRadius: 10,
             spreadRadius: 2,
           ),
@@ -26,16 +25,12 @@ class DetailTitle extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.all(8),
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              shape: BoxShape.circle,
-            ),
             child: Text(
               '#$id',
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: Colors.red,
+                color: Colors.white,
               ),
             ),
           ),
@@ -43,7 +38,7 @@ class DetailTitle extends StatelessWidget {
           Text(
             name.toUpperCase(),
             style: const TextStyle(
-              fontSize: 28,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),

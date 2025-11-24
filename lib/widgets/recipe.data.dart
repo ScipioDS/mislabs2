@@ -14,7 +14,6 @@ class DetailData extends StatelessWidget {
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
       ),
       child: SingleChildScrollView(
         child: Column(
