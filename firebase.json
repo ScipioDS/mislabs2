@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"mislabs-500xxl","appId":"1:44770903100:android:ed28099815a14cc1aa2f39","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"mislabs-500xxl","configurations":{"android":"1:44770903100:android:ed28099815a14cc1aa2f39","web":"1:44770903100:web:60ce6609aa6a16cfaa2f39"}}}}}}

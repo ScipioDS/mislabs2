@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "44770903100",
+    "project_id": "mislabs-500xxl",
+    "storage_bucket": "mislabs-500xxl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44770903100:android:ed28099815a14cc1aa2f39",
+        "android_client_info": {
+          "package_name": "com.finki.mislabs2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1Iu6gl-5Y64P_qKUCZDRUHrRsVgW1-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
